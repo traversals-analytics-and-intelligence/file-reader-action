@@ -1,0 +1,11 @@
+name: 'File Reader Action'
+description: 'Reads the content of the file under the given path and provides it via output.'
+author: 'traversals-analytics-and-intelligence'
+inputs:
+  file:
+    description: 'Path to the file that will be read'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.file }}
