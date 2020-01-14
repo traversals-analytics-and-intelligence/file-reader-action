@@ -1,9 +1,13 @@
 name: 'File Reader Action'
 description: 'Reads the content of the file under the given path and provides it via output.'
 author: 'traversals-analytics-and-intelligence'
+branding:
+  icon: 'file-text'
+  color: 'blue'
 inputs:
   file:
     description: 'Path to the file that will be read'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
