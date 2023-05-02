@@ -11,4 +11,4 @@ content=$(cat $1)
 content="${content//$'\n'/'%0A'}"
 content="${content//$'\r'/'%0D'}"
 
-echo "::set-output name=content::${content}"
+echo "content=${content}" >> $GITHUB_OUTPUT
